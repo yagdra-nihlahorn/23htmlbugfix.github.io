@@ -7351,7 +7351,7 @@ function You(){
       this.alive=false;this.hp=1; if(!killer) killer=creature.default;
       if(global.current_a.id!==act.default.id)deactivateAct(global.current_a); global.flags.work=false
       you.sat/you.satmax>.3?giveSkExp(skl.dth,killer.rnk*10+1):giveSkExp(skl.dth,killer.rnk+1);
-      if(this.sat>0)this.sat*=(.55*(1-skl.dth.use()));giveItem(item.death_b);
+      if(this.sat>0)this.sat*=(.45*(1+skl.dth.use()));giveItem(item.death_b);
       dom.d5_1_1.update(); global.s_l=0; global.stat.deadt++; 
       for(let x in global.achchk[0]) global.achchk[0][x](killer);
       clearInterval(timers.rdng);clearInterval(timers.rdngdots); global.flags.rdng=false; clearInterval(timers.job1t); clearInterval(timers.bstmonupdate)
